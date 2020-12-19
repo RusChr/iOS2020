@@ -7,4 +7,15 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
+class TestPods: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
+    
+
+}
