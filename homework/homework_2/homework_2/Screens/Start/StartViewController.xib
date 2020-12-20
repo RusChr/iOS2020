@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,31 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARW-hw-RBP">
-                    <rect key="frame" x="16" y="806" width="382" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="KE5-kU-YMQ"/>
-                    </constraints>
-                    <state key="normal" title="Войти"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKk-yk-Ede">
-                    <rect key="frame" x="16" y="758" width="382" height="40"/>
+                    <rect key="frame" x="16" y="722" width="382" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Dhv-gO-piD"/>
-                        <constraint firstAttribute="height" constant="40" id="wwk-rS-P5s"/>
+                        <constraint firstAttribute="height" constant="40" id="Eoi-eP-9Iw"/>
                     </constraints>
                     <state key="normal" title="Зарегистрироваться"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARW-hw-RBP">
+                    <rect key="frame" x="16" y="666" width="382" height="40"/>
+                    <state key="normal" title="Войти"/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="kKk-yk-Ede" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0ay-kT-3XM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ARW-hw-RBP" secondAttribute="trailing" constant="16" id="4I9-Sy-XH4"/>
-                <constraint firstItem="ARW-hw-RBP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6ca-Qq-T3c"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKk-yk-Ede" secondAttribute="trailing" constant="16" id="UEl-7Q-AHI"/>
-                <constraint firstItem="ARW-hw-RBP" firstAttribute="top" secondItem="kKk-yk-Ede" secondAttribute="bottom" constant="8" symbolic="YES" id="aP7-Kx-U1N"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ARW-hw-RBP" secondAttribute="bottom" constant="16" id="hJs-eg-wcx"/>
+                <constraint firstItem="ARW-hw-RBP" firstAttribute="trailing" secondItem="kKk-yk-Ede" secondAttribute="trailing" id="Eb7-Ol-H19"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKk-yk-Ede" secondAttribute="trailing" constant="16" id="KEb-gL-2hu"/>
+                <constraint firstItem="ARW-hw-RBP" firstAttribute="height" secondItem="kKk-yk-Ede" secondAttribute="height" id="WVh-aM-2oy"/>
+                <constraint firstItem="ARW-hw-RBP" firstAttribute="width" secondItem="kKk-yk-Ede" secondAttribute="width" id="Yob-p0-zWL"/>
+                <constraint firstItem="kKk-yk-Ede" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cZx-Wg-fGq"/>
+                <constraint firstItem="kKk-yk-Ede" firstAttribute="top" secondItem="ARW-hw-RBP" secondAttribute="bottom" constant="16" id="iNQ-TS-7mJ"/>
+                <constraint firstItem="ARW-hw-RBP" firstAttribute="leading" secondItem="kKk-yk-Ede" secondAttribute="leading" id="itR-eC-3zA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kKk-yk-Ede" secondAttribute="bottom" constant="100" id="uaT-uw-i7k"/>
             </constraints>
             <point key="canvasLocation" x="-20" y="141"/>
         </view>

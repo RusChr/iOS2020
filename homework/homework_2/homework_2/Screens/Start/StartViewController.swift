@@ -18,15 +18,26 @@ class StartViewController: UIViewController {
         
         view.backgroundColor = .systemBackground
         
-        signInButton.addTarget(self, action: #selector(buttonAction(sender:)), for: .touchUpInside)
-        signUpButton.addTarget(self, action: #selector(buttonAction(sender:)), for: .touchUpInside)
+        configure(button: signInButton, backgroundColor: .systemGreen)
+        configure(button: signUpButton, backgroundColor: .systemBlue)
+        
+        signInButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     }
     
     
-    @objc func buttonAction(sender: UIButton) {
+    @objc func buttonAction(_ sender: UIButton) {
         if let buttonTitle = sender.currentTitle {
             print("The button \"\(buttonTitle)\" has been clicked")
         }
+    }
+    
+    
+    private func configure(button: UIButton, backgroundColor: UIColor) {
+        button.backgroundColor = backgroundColor
+        button.layer.cornerRadius = 10
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     }
 
 }
