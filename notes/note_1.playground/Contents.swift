@@ -42,29 +42,34 @@ import UIKit
 
 
 
-//func doSomething() {
-//    print("meow meow")
-//}
-//
-//var closure: () -> Void = {}
-//
-//typealias VoidClosure = () -> Void
-//
-//var closure1: VoidClosure
-//var closure2: VoidClosure?
-//
-//closure2 = doSomething
-//closure2?()
-//
-//
-//func doSomething2(str: String) -> String {
-//    return str
-//}
-//
-//typealias StringClosure = (String) -> String
-//
-//var closure3: StringClosure
-//closure3 = doSomething2
+func doSomething() {
+    print("meow meow")
+}
+
+var closure: () -> Void = {}
+
+typealias VoidClosure = () -> Void
+
+var closure1: VoidClosure
+closure1 = doSomething
+closure1()
+
+var closure2: VoidClosure?
+closure2?()
+
+closure2 = doSomething
+closure2?()
+
+
+func doSomething2(str: String) -> String {
+    return str
+}
+
+typealias StringClosure = (String) -> String
+
+var closure3: StringClosure
+closure3 = doSomething2
+
 
 
 let digitNames = [
