@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5E3F5CA42592F696001D9E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F5CA32592F696001D9E32 /* AppDelegate.swift */; };
 		5E3F5CA62592F696001D9E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F5CA52592F696001D9E32 /* SceneDelegate.swift */; };
-		5E3F5CA82592F696001D9E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F5CA72592F696001D9E32 /* ViewController.swift */; };
-		5E3F5CAB2592F696001D9E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F5CA92592F696001D9E32 /* Main.storyboard */; };
 		5E3F5CAD2592F697001D9E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F5CAC2592F697001D9E32 /* Assets.xcassets */; };
 		5E3F5CB02592F697001D9E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F5CAE2592F697001D9E32 /* LaunchScreen.storyboard */; };
+		5EA6E8042593B8A500667678 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6E8022593B8A500667678 /* CitiesViewController.swift */; };
+		5EA6E8052593B8A500667678 /* CitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6E8032593B8A500667678 /* CitiesViewController.xib */; };
 		DD61780F80CB0B9957E504B6 /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C62DB2F6D1802E9E112F0 /* Pods_API.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +20,11 @@
 		5E3F5CA02592F696001D9E32 /* API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = API.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3F5CA32592F696001D9E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E3F5CA52592F696001D9E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E3F5CA72592F696001D9E32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E3F5CAA2592F696001D9E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E3F5CAC2592F697001D9E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E3F5CAF2592F697001D9E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E3F5CB12592F697001D9E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA6E8022593B8A500667678 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		5EA6E8032593B8A500667678 /* CitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesViewController.xib; sourceTree = "<group>"; };
 		5F5568C55C95B251ED751A3F /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
 		A864E7B8DF294CED24C51F54 /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
 		C82C62DB2F6D1802E9E112F0 /* Pods_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +48,6 @@
 				5F5568C55C95B251ED751A3F /* Pods-API.debug.xcconfig */,
 				A864E7B8DF294CED24C51F54 /* Pods-API.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +72,31 @@
 		5E3F5CA22592F696001D9E32 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5EA6E8002593B85800667678 /* Screens */,
 				5E3F5CA32592F696001D9E32 /* AppDelegate.swift */,
 				5E3F5CA52592F696001D9E32 /* SceneDelegate.swift */,
-				5E3F5CA72592F696001D9E32 /* ViewController.swift */,
-				5E3F5CA92592F696001D9E32 /* Main.storyboard */,
 				5E3F5CAC2592F697001D9E32 /* Assets.xcassets */,
 				5E3F5CAE2592F697001D9E32 /* LaunchScreen.storyboard */,
 				5E3F5CB12592F697001D9E32 /* Info.plist */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		5EA6E8002593B85800667678 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5EA6E8012593B86300667678 /* Cities */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5EA6E8012593B86300667678 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				5EA6E8022593B8A500667678 /* CitiesViewController.swift */,
+				5EA6E8032593B8A500667678 /* CitiesViewController.xib */,
+			);
+			path = Cities;
 			sourceTree = "<group>";
 		};
 		F3D23DBB66D54F7801768A03 /* Frameworks */ = {
@@ -152,8 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3F5CB02592F697001D9E32 /* LaunchScreen.storyboard in Resources */,
+				5EA6E8052593B8A500667678 /* CitiesViewController.xib in Resources */,
 				5E3F5CAD2592F697001D9E32 /* Assets.xcassets in Resources */,
-				5E3F5CAB2592F696001D9E32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3F5CA82592F696001D9E32 /* ViewController.swift in Sources */,
+				5EA6E8042593B8A500667678 /* CitiesViewController.swift in Sources */,
 				5E3F5CA42592F696001D9E32 /* AppDelegate.swift in Sources */,
 				5E3F5CA62592F696001D9E32 /* SceneDelegate.swift in Sources */,
 			);
@@ -215,14 +230,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5E3F5CA92592F696001D9E32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E3F5CAA2592F696001D9E32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E3F5CAE2592F697001D9E32 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
