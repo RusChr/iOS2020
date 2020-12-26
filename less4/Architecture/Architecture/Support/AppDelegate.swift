@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NewsServiceImplementation().fetchNews { (news) in
+            print("name: \(news?.name), height: \(news?.heightt), mass: \(news?.mass)")
+        }
         return true
     }
 
