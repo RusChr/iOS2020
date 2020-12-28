@@ -15,7 +15,15 @@ class NewsServiceImplementation: NewsService {
         let request = URLRequest(url: URL(string: url)!)
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            closure?(try? JSONDecoder().decode(News.self, from: data!))
+            do {
+                let model = try JSONDecoder().decode(News.self, from: data!)
+                DispatchQueue.main.async {
+                    closure?(model)
+                }
+            } catch {
+                print(String(data: data!, encoding: .utf8))
+                print(error.localizedDescription)
+            }
         }.resume()
     }
 }

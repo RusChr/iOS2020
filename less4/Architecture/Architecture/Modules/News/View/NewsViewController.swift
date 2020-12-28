@@ -7,13 +7,32 @@
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class NewsViewController: UIViewController, NewsViewInConnection {
     
-    var presenter: NewsPresenter?
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var heightLabel: UILabel!
+    @IBOutlet private weak var massLabel: UILabel!
+    
+    var presenter: NewsViewOutConnection?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        presenter?.viewDidLoad()
+    }
+    
+    
+    func setNameLabel(text: String) {
+        nameLabel.text = text
+    }
+    
+    
+    func setHeightLabel(text: String) {
+        heightLabel.text = text
+    }
+    
+    
+    func setMassLabel(text: String) {
+        massLabel.text = text
     }
 }

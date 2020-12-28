@@ -7,8 +7,15 @@
 
 import Foundation
 
-class NewsInteractor {
+class NewsInteractor: NewsPresenterOutConnection {
     
-    weak var presenter: NewsPresenter?
+    weak var presenter: NewsPresenterInConnection?
     var newsService: NewsService?
+    
+    
+    func startFetchingNews() {
+        newsService?.fetchNews({ [weak self] (news) in
+            self?.presenter?.newsFetched(news)
+        })
+    }
 }

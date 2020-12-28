@@ -10,6 +10,6 @@ import Foundation
 struct News: Codable {
     
     var name: String?
-    var heightt: String?
+    var height: String?
     var mass: String?
 }
